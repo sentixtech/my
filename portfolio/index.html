@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikash Kumar | PHP Laravel Developer | Livewire & Payment Gateway Expert</title>
+    <meta name="description" content="Hire Vikash Kumar, a skilled PHP Laravel Developer with 3+ years experience in Livewire, Payment Gateway Integration (Razorpay, Stripe, PayPal), REST APIs, and scalable web applications.">
+    <meta name="keywords" content="PHP Developer, Laravel Developer, Livewire Expert, Payment Gateway Integration, Razorpay, Stripe, PayPal, REST API Developer, Freelance Laravel Developer India">
+    <meta name="author" content="Vikash Kumar">
+    <meta property="og:title" content="Vikash Kumar | PHP Laravel Developer">
+    <meta property="og:description" content="Expert in Laravel, Livewire, Payment Gateways & REST APIs. 3+ years experience.">
+    <meta property="og:type" content="website">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        primary: { 50: '#eef2ff', 100: '#e0e7ff', 200: '#c7d2fe', 300: '#a5b4fc', 400: '#818cf8', 500: '#6366f1', 600: '#4f46e5', 700: '#4338ca', 800: '#3730a3', 900: '#312e81' },
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'gradient': 'gradient 8s ease infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-20px); } }
+        @keyframes gradient { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+        .gradient-text { background: linear-gradient(135deg, #6366f1, #8b5cf6, #06b6d4); background-size: 200% 200%; animation: gradient 4s ease infinite; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .card-hover { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .card-hover:hover { transform: translateY(-8px) scale(1.02); box-shadow: 0 25px 50px -12px rgba(99, 102, 241, 0.25); }
+        .glass { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.3); }
+        .blob { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+        .skill-badge { transition: all 0.3s ease; }
+        .skill-badge:hover { transform: scale(1.1) rotate(-2deg); }
+        .btn-glow { box-shadow: 0 0 40px rgba(99, 102, 241, 0.4); }
+        .btn-glow:hover { box-shadow: 0 0 60px rgba(99, 102, 241, 0.6); }
+        .service-icon { transition: all 0.4s ease; }
+        .card-hover:hover .service-icon { transform: scale(1.2) rotate(10deg); }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+        .animate-float-delay { animation: float 6s ease-in-out 2s infinite; }
+        .text-shadow { text-shadow: 0 4px 30px rgba(99, 102, 241, 0.3); }
+    </style>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Vikash Kumar","jobTitle":"PHP Laravel Developer","knowsAbout":["PHP","Laravel","Livewire","Payment Gateway Integration"]}</script>
+</head>
+<body class="bg-slate-50 text-gray-800 font-sans antialiased overflow-x-hidden">
+
+    <!-- Floating Background Elements -->
+    <div class="fixed inset-0 -z-10 overflow-hidden">
+        <div class="absolute top-20 left-10 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float"></div>
+        <div class="absolute top-40 right-10 w-96 h-96 bg-cyan-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float-delay"></div>
+        <div class="absolute bottom-20 left-1/3 w-80 h-80 bg-indigo-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 glass z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold gradient-text">⚡ Vikash Kumar</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#about" class="text-gray-600 hover:text-primary-600 transition font-medium">About</a>
+                <a href="#services" class="text-gray-600 hover:text-primary-600 transition font-medium">Services</a>
+                <a href="#skills" class="text-gray-600 hover:text-primary-600 transition font-medium">Skills</a>
+                <a href="#projects" class="text-gray-600 hover:text-primary-600 transition font-medium">Projects</a>
+                <a href="#contact" class="bg-gradient-to-r from-primary-600 to-purple-600 text-white px-6 py-2.5 rounded-full hover:opacity-90 transition font-semibold btn-glow">Hire Me</a>
+            </div>
+            <button id="menu-btn" class="md:hidden text-gray-600 p-2"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden glass border-t border-white/20 px-4 py-4 space-y-3">
+            <a href="#about" class="block py-2 text-gray-600 hover:text-primary-600 font-medium">About</a>
+            <a href="#services" class="block py-2 text-gray-600 hover:text-primary-600 font-medium">Services</a>
+            <a href="#skills" class="block py-2 text-gray-600 hover:text-primary-600 font-medium">Skills</a>
+            <a href="#projects" class="block py-2 text-gray-600 hover:text-primary-600 font-medium">Projects</a>
+            <a href="#contact" class="block bg-gradient-to-r from-primary-600 to-purple-600 text-white px-6 py-3 rounded-full text-center font-semibold">Hire Me</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="min-h-screen flex items-center pt-20 relative">
+        <div class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-12 items-center">
+            <div class="order-2 md:order-1">
+                <div class="inline-flex items-center gap-2 bg-primary-100 text-primary-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                    <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span> Available for Projects
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-4 leading-tight text-shadow">
+                    Hi, I'm <span class="gradient-text">Vikash Kumar</span>
+                </h1>
+                <h2 class="text-xl md:text-2xl text-gray-600 mb-6 font-medium">PHP Laravel Developer | Livewire & Payment Gateway Expert</h2>
+                <p class="text-gray-500 mb-8 leading-relaxed text-lg">I build secure, scalable web applications with Laravel. Specializing in Livewire interfaces, Razorpay, Stripe, PayPal integrations, and custom REST APIs. <span class="text-primary-600 font-semibold">3+ years</span> delivering client-focused solutions.</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact" class="group bg-gradient-to-r from-primary-600 to-purple-600 text-white px-8 py-4 rounded-full font-bold hover:opacity-90 transition btn-glow flex items-center gap-2">
+                        Hire Me <svg class="w-5 h-5 group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </a>
+                    <a href="#projects" class="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-full font-bold hover:border-primary-600 hover:text-primary-600 transition flex items-center gap-2">
+                        View Work <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                    </a>
+                </div>
+                <div class="flex items-center gap-6 mt-10">
+                    <div class="flex -space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-green-400 to-cyan-400 border-2 border-white flex items-center justify-center text-white text-xs font-bold">★</div>
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-purple-400 to-pink-400 border-2 border-white flex items-center justify-center text-white text-xs font-bold">★</div>
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 to-red-400 border-2 border-white flex items-center justify-center text-white text-xs font-bold">★</div>
+                    </div>
+                    <div><p class="text-gray-900 font-bold">30+ Happy Clients</p><p class="text-gray-500 text-sm">Worldwide</p></div>
+                </div>
+            </div>
+            <div class="order-1 md:order-2 flex justify-center">
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary-400 to-purple-500 rounded-3xl blur-2xl opacity-30 animate-pulse-slow"></div>
+                    <div class="relative w-72 h-72 md:w-96 md:h-96 bg-gradient-to-br from-primary-500 via-purple-500 to-cyan-500 rounded-3xl shadow-2xl flex items-center justify-center animate-float blob">
+                        <div class="w-64 h-64 md:w-80 md:h-80 bg-white rounded-3xl flex items-center justify-center shadow-inner blob">
+                            <span class="text-7xl md:text-9xl font-black gradient-text">VK</span>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-4 -right-4 bg-white rounded-2xl shadow-xl p-4 glass">
+                        <p class="text-2xl font-bold text-gray-900">3+</p>
+                        <p class="text-gray-500 text-sm">Years Exp.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-24">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-primary-600 font-semibold text-sm uppercase tracking-wider">Get to know me</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mt-3">About Me</h2>
+                <div class="w-24 h-1.5 bg-gradient-to-r from-primary-600 to-purple-600 mx-auto rounded-full mt-6"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-white rounded-3xl p-8 shadow-lg card-hover text-center border border-gray-100">
+                        <div class="text-4xl font-black gradient-text mb-2">3+</div>
+                        <p class="text-gray-600 font-medium">Years Experience</p>
+                    </div>
+                    <div class="bg-white rounded-3xl p-8 shadow-lg card-hover text-center border border-gray-100">
+                        <div class="text-4xl font-black gradient-text mb-2">50+</div>
+                        <p class="text-gray-600 font-medium">Projects Done</p>
+                    </div>
+                    <div class="bg-white rounded-3xl p-8 shadow-lg card-hover text-center border border-gray-100">
+                        <div class="text-4xl font-black gradient-text mb-2">30+</div>
+                        <p class="text-gray-600 font-medium">Happy Clients</p>
+                    </div>
+                    <div class="bg-white rounded-3xl p-8 shadow-lg card-hover text-center border border-gray-100">
+                        <div class="text-4xl font-black gradient-text mb-2">100%</div>
+                        <p class="text-gray-600 font-medium">Satisfaction</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-6">A Developer Who Understands Your Business</h3>
+                    <p class="text-gray-600 mb-5 leading-relaxed text-lg">I'm a passionate PHP Laravel Developer from India with 3+ years of hands-on experience building web applications that solve real business problems.</p>
+                    <p class="text-gray-600 mb-5 leading-relaxed text-lg">My approach: <span class="text-primary-600 font-semibold">understand your goals first</span>, then build solutions that help you achieve them. Whether it's an e-commerce platform or payment integration, I focus on results.</p>
+                    <div class="flex flex-wrap gap-3 mt-8">
+                        <span class="bg-primary-100 text-primary-700 px-4 py-2 rounded-full font-medium">🎯 Problem Solver</span>
+                        <span class="bg-purple-100 text-purple-700 px-4 py-2 rounded-full font-medium">💡 Business-First</span>
+                        <span class="bg-cyan-100 text-cyan-700 px-4 py-2 rounded-full font-medium">🌍 Remote Friendly</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-gradient-to-b from-white to-slate-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-primary-600 font-semibold text-sm uppercase tracking-wider">What I Offer</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mt-3">My Services</h2>
+                <div class="w-24 h-1.5 bg-gradient-to-r from-primary-600 to-purple-600 mx-auto rounded-full mt-6"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-3xl p-8 shadow-lg card-hover border border-gray-100 group">
+                    <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-orange-500 rounded-2xl flex items-center justify-center mb-6 service-icon shadow-lg shadow-red-200"><svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg></div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Laravel Web Development</h3>
+                    <p class="text-gray-600">Custom Laravel applications with clean architecture, optimized for performance and security.</p>
+                </div>
+                <div class="bg-white rounded-3xl p-8 shadow-lg card-hover border border-gray-100 group">
+                    <div class="w-16 h-16 bg-gradient-to-br from-pink-500 to-purple-500 rounded-2xl flex items-center justify-center mb-6 service-icon shadow-lg shadow-pink-200"><svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Livewire Dynamic Apps</h3>
+                    <p class="text-gray-600">Real-time, reactive interfaces using Laravel Livewire for seamless user experiences.</p>
+                </div>
+                <div class="bg-white rounded-3xl p-8 shadow-lg card-hover border border-gray-100 group">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center mb-6 service-icon shadow-lg shadow-green-200"><svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg></div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Payment Gateway Integration</h3>
+                    <p class="text-gray-600">Secure Razorpay, Stripe, PayPal, Cashfree integration for seamless payments.</p>
+                </div>
+                <div class="bg-white rounded-3xl p-8 shadow-lg card-hover border border-gray-100 group">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mb-6 service-icon shadow-lg shadow-blue-200"><svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg></div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">REST API Development</h3>
+                    <p class="text-gray-600">Robust, well-documented RESTful APIs for mobile apps and third-party integrations.</p>
+                </div>
+                <div class="bg-white rounded-3xl p-8 shadow-lg card-hover border border-gray-100 group">
+                    <div class="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-500 rounded-2xl flex items-center justify-center mb-6 service-icon shadow-lg shadow-amber-200"><svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7"/></svg></div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Admin Panels & Dashboards</h3>
+                    <p class="text-gray-600">Feature-rich admin panels with analytics, role-based access, and real-time reporting.</p>
+                </div>
+                <div class="bg-white rounded-3xl p-8 shadow-lg card-hover border border-gray-100 group">
+                    <div class="w-16 h-16 bg-gradient-to-br from-rose-500 to-red-500 rounded-2xl flex items-center justify-center mb-6 service-icon shadow-lg shadow-rose-200"><svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg></div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Bug Fixing & Optimization</h3>
+                    <p class="text-gray-600">Performance optimization, code refactoring, and bug fixes for better UX.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-primary-600 font-semibold text-sm uppercase tracking-wider">My Expertise</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mt-3">Tech Stack</h2>
+                <div class="w-24 h-1.5 bg-gradient-to-r from-primary-600 to-purple-600 mx-auto rounded-full mt-6"></div>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                <div class="bg-white rounded-2xl p-5 text-center shadow-md skill-badge border border-gray-100"><div class="text-3xl mb-2">🐘</div><p class="font-bold text-gray-800">PHP</p></div>
+                <div class="bg-white rounded-2xl p-5 text-center shadow-md skill-badge border border-gray-100"><div class="text-3xl mb-2">🔴</div><p class="font-bold text-gray-800">Laravel</p></div>
+                <div class="bg-white rounded-2xl p-5 text-center shadow-md skill-badge border border-gray-100"><div class="text-3xl mb-2">⚡</div><p class="font-bold text-gray-800">Livewire</p></div>
+                <div class="bg-white rounded-2xl p-5 text-center shadow-md skill-badge border border-gray-100"><div class="text-3xl mb-2">🗄️</div><p class="font-bold text-gray-800">MySQL</p></div>
+                <div class="bg-white rounded-2xl p-5 text-center shadow-md skill-badge border border-gray-100"><div class="text-3xl mb-2">🎨</div><p class="font-bold text-gray-800">Tailwind</p></div>
+                <div class="bg-white rounded-2xl p-5 text-center shadow-md skill-badge border border-gray-100"><div class="text-3xl mb-2">📜</div><p class="font-bold text-gray-800">JavaScript</p></div>
+                <div class="bg-white rounded-2xl p-5 text-center shadow-md skill-badge border border-gray-100"><div class="text-3xl mb-2">💲</div><p class="font-bold text-gray-800">jQuery</p></div>
+                <div class="bg-white rounded-2xl p-5 text-center shadow-md skill-badge border border-gray-100"><div class="text-3xl mb-2">🔗</div><p class="font-bold text-gray-800">REST API</p></div>
+                <div class="bg-white rounded-2xl p-5 text-center shadow-md skill-badge border border-gray-100"><div class="text-3xl mb-2">💳</div><p class="font-bold text-gray-800">Razorpay</p></div>
+                <div class="bg-white rounded-2xl p-5 text-center shadow-md skill-badge border border-gray-100"><div class="text-3xl mb-2">💰</div><p class="font-bold text-gray-800">Stripe</p></div>
+                <div class="bg-white rounded-2xl p-5 text-center shadow-md skill-badge border border-gray-100"><div class="text-3xl mb-2">🅿️</div><p class="font-bold text-gray-800">PayPal</p></div>
+                <div class="bg-white rounded-2xl p-5 text-center shadow-md skill-badge border border-gray-100"><div class="text-3xl mb-2">🐙</div><p class="font-bold text-gray-800">Git</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 bg-gradient-to-b from-slate-50 to-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-primary-600 font-semibold text-sm uppercase tracking-wider">My Work</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mt-3">Featured Projects</h2>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Diverse projects delivered across multiple industries</p>
+                <div class="w-24 h-1.5 bg-gradient-to-r from-primary-600 to-purple-600 mx-auto rounded-full mt-6"></div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover border border-gray-100 text-center group">
+                    <div class="w-14 h-14 bg-gradient-to-br from-primary-500 to-purple-500 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition"><span class="text-2xl">🛒</span></div>
+                    <h3 class="font-bold text-gray-900">E-Commerce</h3>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover border border-gray-100 text-center group">
+                    <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition"><span class="text-2xl">📊</span></div>
+                    <h3 class="font-bold text-gray-900">Lead Management & Selling</h3>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover border border-gray-100 text-center group">
+                    <div class="w-14 h-14 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition"><span class="text-2xl">🏔️</span></div>
+                    <h3 class="font-bold text-gray-900">Hiking & Trekking Website</h3>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover border border-gray-100 text-center group">
+                    <div class="w-14 h-14 bg-gradient-to-br from-orange-500 to-red-500 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition"><span class="text-2xl">🔧</span></div>
+                    <h3 class="font-bold text-gray-900">Workshop Management</h3>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover border border-gray-100 text-center group">
+                    <div class="w-14 h-14 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition"><span class="text-2xl">🏦</span></div>
+                    <h3 class="font-bold text-gray-900">Insurance & Finance</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- API Integrations Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-primary-600 font-semibold text-sm uppercase tracking-wider">Seamless Connections</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mt-3">API Integrations</h2>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Expert integration of payment gateways, messaging APIs, and third-party services</p>
+                <div class="w-24 h-1.5 bg-gradient-to-r from-primary-600 to-purple-600 mx-auto rounded-full mt-6"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Payment Gateway Integration -->
+                <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-3xl p-8 border border-green-200 card-hover">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-green-200"><span class="text-3xl">💳</span></div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Payment Gateway Integration</h3>
+                    <p class="text-gray-600 mb-6">Secure and seamless payment processing for your web applications</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-white text-green-700 px-3 py-1.5 rounded-full text-sm font-medium border border-green-200">Razorpay</span>
+                        <span class="bg-white text-blue-700 px-3 py-1.5 rounded-full text-sm font-medium border border-blue-200">Stripe</span>
+                        <span class="bg-white text-indigo-700 px-3 py-1.5 rounded-full text-sm font-medium border border-indigo-200">PayPal</span>
+                        <span class="bg-white text-purple-700 px-3 py-1.5 rounded-full text-sm font-medium border border-purple-200">Cashfree</span>
+                        <span class="bg-white text-orange-700 px-3 py-1.5 rounded-full text-sm font-medium border border-orange-200">Paytm</span>
+                    </div>
+                </div>
+                <!-- WhatsApp API Integration -->
+                <div class="bg-gradient-to-br from-green-50 to-teal-50 rounded-3xl p-8 border border-green-200 card-hover">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-green-200"><span class="text-3xl">📱</span></div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">WhatsApp API Integration</h3>
+                    <p class="text-gray-600 mb-6">Automate customer communication with WhatsApp Business API</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-white text-green-700 px-3 py-1.5 rounded-full text-sm font-medium border border-green-200">WhatsApp Business</span>
+                        <span class="bg-white text-teal-700 px-3 py-1.5 rounded-full text-sm font-medium border border-teal-200">Twilio</span>
+                        <span class="bg-white text-cyan-700 px-3 py-1.5 rounded-full text-sm font-medium border border-cyan-200">Gupshup</span>
+                        <span class="bg-white text-emerald-700 px-3 py-1.5 rounded-full text-sm font-medium border border-emerald-200">WATI</span>
+                    </div>
+                </div>
+                <!-- SMS API Integration -->
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-8 border border-blue-200 card-hover">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-blue-200"><span class="text-3xl">💬</span></div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">SMS API Integration</h3>
+                    <p class="text-gray-600 mb-6">OTP verification, notifications & bulk SMS for your applications</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-white text-blue-700 px-3 py-1.5 rounded-full text-sm font-medium border border-blue-200">MSG91</span>
+                        <span class="bg-white text-indigo-700 px-3 py-1.5 rounded-full text-sm font-medium border border-indigo-200">Twilio SMS</span>
+                        <span class="bg-white text-purple-700 px-3 py-1.5 rounded-full text-sm font-medium border border-purple-200">Fast2SMS</span>
+                        <span class="bg-white text-violet-700 px-3 py-1.5 rounded-full text-sm font-medium border border-violet-200">Textlocal</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaboration Section -->
+    <section class="py-24 bg-gradient-to-b from-slate-50 to-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-primary-600 font-semibold text-sm uppercase tracking-wider">Team Up</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mt-3">Collaboration with App Developers</h2>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">I work closely with mobile app developers to build powerful backend systems</p>
+                <div class="w-24 h-1.5 bg-gradient-to-r from-primary-600 to-purple-600 mx-auto rounded-full mt-6"></div>
+            </div>
+            <div class="bg-gradient-to-br from-primary-600 via-purple-600 to-indigo-700 rounded-3xl p-8 md:p-12 text-white relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full filter blur-3xl"></div>
+                <div class="absolute bottom-0 left-0 w-48 h-48 bg-white/10 rounded-full filter blur-3xl"></div>
+                <div class="relative grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-3xl font-bold mb-4">Backend APIs for Mobile Apps</h3>
+                        <p class="text-white/80 mb-6 text-lg">I specialize in building robust Laravel backend APIs that power iOS and Android applications. Whether you need REST APIs, real-time features, or complex business logic - I've got you covered.</p>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="bg-white/20 backdrop-blur px-4 py-2 rounded-full font-medium">📱 iOS Apps</span>
+                            <span class="bg-white/20 backdrop-blur px-4 py-2 rounded-full font-medium">🤖 Android Apps</span>
+                            <span class="bg-white/20 backdrop-blur px-4 py-2 rounded-full font-medium">⚛️ React Native</span>
+                            <span class="bg-white/20 backdrop-blur px-4 py-2 rounded-full font-medium">💙 Flutter</span>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-white/10 backdrop-blur rounded-2xl p-5 text-center"><span class="text-3xl mb-2 block">🔗</span><p class="font-semibold">REST APIs</p></div>
+                        <div class="bg-white/10 backdrop-blur rounded-2xl p-5 text-center"><span class="text-3xl mb-2 block">🔐</span><p class="font-semibold">JWT Auth</p></div>
+                        <div class="bg-white/10 backdrop-blur rounded-2xl p-5 text-center"><span class="text-3xl mb-2 block">🔔</span><p class="font-semibold">Push Notifications</p></div>
+                        <div class="bg-white/10 backdrop-blur rounded-2xl p-5 text-center"><span class="text-3xl mb-2 block">⚡</span><p class="font-semibold">Real-time Data</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Me -->
+    <section class="py-24 bg-gradient-to-br from-primary-600 via-purple-600 to-indigo-700 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10"><div class="absolute top-0 left-0 w-96 h-96 bg-white rounded-full filter blur-3xl"></div><div class="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full filter blur-3xl"></div></div>
+        <div class="max-w-6xl mx-auto px-4 relative">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Why Choose Me?</h2>
+                <p class="text-white/80 text-lg max-w-2xl mx-auto">I'm committed to delivering quality work that exceeds expectations</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6"><div class="w-20 h-20 bg-white/10 rounded-2xl flex items-center justify-center mx-auto mb-5 backdrop-blur"><span class="text-4xl">💻</span></div><h3 class="text-xl font-bold mb-3">Clean Code</h3><p class="text-white/70">Well-structured, documented, and maintainable</p></div>
+                <div class="text-center p-6"><div class="w-20 h-20 bg-white/10 rounded-2xl flex items-center justify-center mx-auto mb-5 backdrop-blur"><span class="text-4xl">🔍</span></div><h3 class="text-xl font-bold mb-3">SEO Friendly</h3><p class="text-white/70">Optimized for search engines</p></div>
+                <div class="text-center p-6"><div class="w-20 h-20 bg-white/10 rounded-2xl flex items-center justify-center mx-auto mb-5 backdrop-blur"><span class="text-4xl">🔒</span></div><h3 class="text-xl font-bold mb-3">Secure Payments</h3><p class="text-white/70">PCI-compliant integrations</p></div>
+                <div class="text-center p-6"><div class="w-20 h-20 bg-white/10 rounded-2xl flex items-center justify-center mx-auto mb-5 backdrop-blur"><span class="text-4xl">🤝</span></div><h3 class="text-xl font-bold mb-3">Long-term Support</h3><p class="text-white/70">Ongoing maintenance & updates</p></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-primary-600 font-semibold text-sm uppercase tracking-wider">Get In Touch</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mt-3">Let's Work Together</h2>
+                <div class="w-24 h-1.5 bg-gradient-to-r from-primary-600 to-purple-600 mx-auto rounded-full mt-6"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <form id="contactForm" class="bg-white rounded-3xl p-8 shadow-xl border border-gray-100 space-y-6">
+                    <div><label class="block text-gray-700 font-semibold mb-2">Your Name</label><input type="text" id="userName" required class="w-full px-5 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition" placeholder="John Doe"></div>
+                    <div><label class="block text-gray-700 font-semibold mb-2">Email Address</label><input type="email" id="userEmail" required class="w-full px-5 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition" placeholder="john@example.com"></div>
+                    <div><label class="block text-gray-700 font-semibold mb-2">Message</label><textarea rows="4" id="userMessage" required class="w-full px-5 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition" placeholder="Tell me about your project..."></textarea></div>
+                    <button type="submit" class="w-full bg-gradient-to-r from-green-500 to-emerald-600 text-white py-4 rounded-xl font-bold hover:opacity-90 transition btn-glow text-lg flex items-center justify-center gap-2">📱 Send via WhatsApp</button>
+                </form>
+                <div class="space-y-6">
+                    <div class="bg-white rounded-3xl p-8 shadow-xl border border-gray-100">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Contact Info</h3>
+                        <div class="space-y-5">
+                            <a href="mailto:shambishnoi75@gmail.com" class="flex items-center gap-4 text-gray-600 hover:text-primary-600 transition group"><div class="w-14 h-14 bg-gradient-to-br from-primary-500 to-purple-500 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition"><span class="text-white text-xl">📧</span></div><div><p class="font-semibold text-gray-900">Email</p><p>shambishnoi75@gmail.com</p></div></a>
+                            <a href="https://wa.me/918302618469" class="flex items-center gap-4 text-gray-600 hover:text-green-600 transition group"><div class="w-14 h-14 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition"><span class="text-white text-xl">📱</span></div><div><p class="font-semibold text-gray-900">WhatsApp</p><p>+91 8302618469</p></div></a>
+                            <a href="https://www.linkedin.com/in/vikash-kumar-bishnoi/" class="flex items-center gap-4 text-gray-600 hover:text-blue-600 transition group"><div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition"><span class="text-white text-xl">💼</span></div><div><p class="font-semibold text-gray-900">LinkedIn</p><p>linkedin.com/in/vikash-kumar-bishnoi</p></div></a>
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-br from-primary-100 to-purple-100 rounded-3xl p-6 border border-primary-200">
+                        <p class="text-primary-800 font-semibold">🌍 Available for Remote Work</p>
+                        <p class="text-primary-700 text-sm mt-1">Based in India, working with clients worldwide.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div><a href="#" class="text-2xl font-bold text-white">⚡ Vikash Kumar</a><p class="mt-2">PHP Laravel Developer | Building Digital Solutions</p></div>
+                <div class="flex gap-4">
+                    <a href="#" class="w-12 h-12 bg-gray-800 rounded-xl flex items-center justify-center hover:bg-primary-600 transition text-xl">🐙</a>
+                    <a href="#" class="w-12 h-12 bg-gray-800 rounded-xl flex items-center justify-center hover:bg-primary-600 transition text-xl">💼</a>
+                    <a href="#" class="w-12 h-12 bg-gray-800 rounded-xl flex items-center justify-center hover:bg-primary-600 transition text-xl">🐦</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center"><p>&copy; 2024 Vikash Kumar. All rights reserved.</p></div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click',()=>document.getElementById('mobile-menu').classList.toggle('hidden'));
+        
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('userName').value;
+            const email = document.getElementById('userEmail').value;
+            const message = document.getElementById('userMessage').value;
+            const whatsappMessage = `*New Portfolio Inquiry*%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Email:* ${encodeURIComponent(email)}%0A%0A*Message:*%0A${encodeURIComponent(message)}`;
+            window.open(`https://wa.me/918302618469?text=${whatsappMessage}`, '_blank');
+        });
+    </script>
+</body>
+</html>
